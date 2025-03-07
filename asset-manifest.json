@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/cute_web/static/css/main.d1f68042.css",
-    "main.js": "/cute_web/static/js/main.ea367e5b.js",
+    "main.js": "/cute_web/static/js/main.cc77b04c.js",
     "static/js/453.9444bf89.chunk.js": "/cute_web/static/js/453.9444bf89.chunk.js",
     "static/media/chi_hien.png": "/cute_web/static/media/chi_hien.c1faadcb946d3b98eb0e.png",
     "static/media/anh_nhom.jpg": "/cute_web/static/media/anh_nhom.937ff6e5ed4bbf7852f4.jpg",
+    "static/media/duyen.png": "/cute_web/static/media/duyen.dabb9751f9f6a20d0dce.png",
     "static/media/phuong.png": "/cute_web/static/media/phuong.ed7059c3c6caf938e7e7.png",
     "static/media/hang.png": "/cute_web/static/media/hang.b5a3e17272d435cccdac.png",
     "static/media/thuy.png": "/cute_web/static/media/thuy.fd9a699baf50b94f20b3.png",
     "static/media/hoai.png": "/cute_web/static/media/hoai.7034f7a3de75e897087b.png",
     "index.html": "/cute_web/index.html",
     "main.d1f68042.css.map": "/cute_web/static/css/main.d1f68042.css.map",
-    "main.ea367e5b.js.map": "/cute_web/static/js/main.ea367e5b.js.map",
+    "main.cc77b04c.js.map": "/cute_web/static/js/main.cc77b04c.js.map",
     "453.9444bf89.chunk.js.map": "/cute_web/static/js/453.9444bf89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1f68042.css",
-    "static/js/main.ea367e5b.js"
+    "static/js/main.cc77b04c.js"
   ]
 }
