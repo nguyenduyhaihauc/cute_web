@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cute_web/static/css/main.d1f68042.css",
+    "main.js": "/cute_web/static/js/main.3acf187c.js",
+    "static/js/453.9444bf89.chunk.js": "/cute_web/static/js/453.9444bf89.chunk.js",
+    "index.html": "/cute_web/index.html",
+    "main.d1f68042.css.map": "/cute_web/static/css/main.d1f68042.css.map",
+    "main.3acf187c.js.map": "/cute_web/static/js/main.3acf187c.js.map",
+    "453.9444bf89.chunk.js.map": "/cute_web/static/js/453.9444bf89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1f68042.css",
+    "static/js/main.3acf187c.js"
+  ]
+}
