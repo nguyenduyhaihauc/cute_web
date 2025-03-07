@@ -4,6 +4,13 @@ import { motion } from 'framer-motion';
 import MessageCard from './components/MessageCard';
 import FloatingHearts from './components/FloatingHearts';
 import './App.css';
+import groupImage from './anh_nhom.jpg'
+import chiHien from './chi_hien.png'
+import phuong from './phuong.png'
+import thuy from './thuy.png'
+import hang from './hang.png'
+import hoai from './hoai.png'
+import duyen from './duyen.png'
 
 const AppContainer = styled.div`
   width: 100%;
@@ -76,6 +83,25 @@ const Title = styled(motion.h1)`
   }
 `;
 
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Khoảng cách giữa các ảnh */
+  margin: 20px 0;
+  flex-wrap: wrap;
+`;
+
+const StyledImage = styled.img`
+  width: 100px; /* Điều chỉnh kích thước ảnh */
+  height: 100px;
+  border-radius: 10px; /* Bo góc ảnh */
+  border: 4px solid white; /* Viền trắng */
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+`;
+
+
 // Then in your JSX:
 <Title
   initial={{ opacity: 0, y: -50 }}
@@ -110,35 +136,7 @@ const PuppyContainer = styled(motion.div)`
   }
 `;
 
-// Decorative frame around the puppy
-// const PuppyFrame = styled.div`
-//   position: absolute;
-//   width: 80%;
-//   height: 90%;
-//   border: 2px dashed rgba(255, 105, 180, 0.3);
-//   border-radius: 20px;
-//   z-index: 4;
-//   pointer-events: none;
-  
-//   &:before, &:after {
-//     content: '';
-//     position: absolute;
-//     width: 20px;
-//     height: 20px;
-//     border-radius: 50%;
-//     background-color: rgba(255, 105, 180, 0.5);
-//   }
-  
-//   &:before {
-//     top: -10px;
-//     left: -10px;
-//   }
-  
-//   &:after {
-//     bottom: -10px;
-//     right: -10px;
-//   }
-// `;
+
 
 function App() {
   const modelViewerRef = useRef(null);
@@ -208,29 +206,15 @@ function App() {
         Chúc mừng ngày 8/3, các bạn nữ trong nhóm mìnhhh!
       </Title>
       
-      <PuppyContainer
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        {/* <PuppyFrame /> */}
-        <model-viewer
-          ref={modelViewerRef}
-          src="/toon_cute_dog.glb"
-          alt="A cute cartoon dog"
-          auto-rotate
-          camera-controls
-          camera-orbit="0deg 10deg 2m"
-          min-camera-orbit="auto auto auto"
-          max-camera-orbit="auto auto auto"
-          shadow-intensity="1"
-          environment-image="neutral"
-          exposure="1"
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          style={{ width: '100%', height: '90%' }}
-        ></model-viewer>
-      </PuppyContainer>
+      <ImageContainer>
+  
+  <StyledImage src={phuong} alt="Phuong" />
+  <StyledImage src={chiHien} alt="Chi Hien" />
+  <StyledImage src={thuy} alt="Thuy" />
+  <StyledImage src={hang} alt="Hang" />
+  <StyledImage src={hoai} alt="Hoai" />
+  <StyledImage src={duyen} alt="Duyen" />
+</ImageContainer>
       
       <MessageCard marginBottom={true} />
     </AppContainer>
